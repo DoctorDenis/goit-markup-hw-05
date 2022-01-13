@@ -25,7 +25,7 @@
     <nav class="header-nav">
       <a href="index.html" class="link header-logo"><span>Web</span>Studio</a>
       <ul class="list header-nav-list">
-          <li><a href="index.html" class="link header-nav-link">Студия</a></li>
+          <li><a href="index.html" class="link header-nav-link active">Студия</a></li>
           <li><a href="portfolio.html" class="link header-nav-link">Портфолио</a></li>
           <li><a href="" class="link header-nav-link">Контакты</a></li>
       </ul>
@@ -49,7 +49,7 @@
    <section class="hero">
      <div class="container">
        <h1 class="hero-head">Эффективные решения для вашего бизнеса</h1>
-       <button type="button" class="hero-btn">Заказать услуги</button>
+       <button type="button" class="hero-btn" data-modal-open>Заказать услуги</button>
      </div>
    </section>
 
@@ -94,11 +94,21 @@
         <h2 class="about-head">Чем мы занимаемся</h2>
         <ul class="list about-list">
           <li class="about-list-item"><img src="./images/hands_on_the_tablet.jpg" width="370" height="294"
-            alt="Man is sitting at the table and holding hands on the keyboard"></li>
+            alt="Man is sitting at the table and holding hands on the keyboard">
+            <div class="about-list-item-footer"><p class="about-footer-text">десктопные приложения</p></div>
+          </li>
           <li class="about-list-item"><img src="./images/woman_looks_into_the_phone.jpg" width="370" height="294"
-            alt="Woman is holding the phone"></li>
+            alt="Woman is holding the phone">
+            <div class="about-list-item-footer">
+              <p class="about-footer-text">мобильные приложения</p>
+            </div>
+          </li>
           <li class="about-list-item"><img src="./images/color_grid_hexagon_in_the_tablet.jpg" width="370" height="294"
-            alt="Color picker hexagon grid on the sreen of the tablet"></li>
+            alt="Color picker hexagon grid on the sreen of the tablet">
+            <div class="about-list-item-footer">
+              <p class="about-footer-text">дизайнерские решения</p>
+            </div>
+          </li>
         </ul>
       </div>
     </section>
@@ -359,5 +369,14 @@
     </div>
   </footer>
 
+  <div class="modal-backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="close-modal-button" data-modal-close>&times</button>
+
+    </div>
+
+  </div>
+
+  <script src="./js/modal.js"></script>
 </body>
 </html>
