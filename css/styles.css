@@ -738,10 +738,18 @@ ol {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+  visibility: visible;
+  opacity: 1;
+  scale: 1;
+  transition-duration: 250ms;
+  transition-property: opacity, scale, visibility;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-backdrop.is-hidden {
   opacity: 0;
+  visibility: visible;
+  scale: 0.1;
   pointer-events: none;
 }
 
